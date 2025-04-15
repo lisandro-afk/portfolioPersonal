@@ -1,3 +1,28 @@
-
+header {
+  background-color: rgb(114, 68, 8);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: end;
+}
+header #nav-list {
+  display: flex;
+  list-style: none;
+}
+header #nav-list .nav-item {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+header #nav-list .nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+header #nav-list .nav-item a:hover {
+  font-size: 1.6rem;
+  transition: all 0.5s ease-in-out;
+}
 
 /*# sourceMappingURL=styles.css.map */
