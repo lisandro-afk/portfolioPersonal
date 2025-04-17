@@ -1,28 +1,64 @@
 header {
-  background-color: rgb(114, 68, 8);
+  background-color: rgb(51, 32, 8);
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: end;
+  border-bottom: solid 0.15rem #000000;
 }
-header #nav-list {
+header #nav-bar {
+  padding: 1rem 0;
+}
+header #nav-bar #nav-list {
   display: flex;
   list-style: none;
+  margin: 0;
 }
-header #nav-list .nav-item {
+header #nav-bar #nav-list .nav-item {
   padding: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
 }
-header #nav-list .nav-item a {
+header #nav-bar #nav-list .nav-item a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
-header #nav-list .nav-item a:hover {
-  font-size: 1.6rem;
+header #nav-bar #nav-list .nav-item a:hover {
+  font-size: 1.9rem;
   transition: all 0.5s ease-in-out;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #000000;
+  background-image: linear-gradient(62deg, #351f03 0%, #131212 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+}
+#welcome-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+#welcome-section p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#projects {
+  display: grid;
+}
+#projects a img {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=styles.css.map */

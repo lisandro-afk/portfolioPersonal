@@ -1,0 +1,12 @@
+#projects{
+    display: grid;
+    
+    
+    a img{
+        width: 30%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+}
+//volver a retomar el tema de los grid, mixims y extends y aplicarlos a este layout

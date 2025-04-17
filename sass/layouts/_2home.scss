@@ -1,0 +1,21 @@
+#welcome-section{
+    height: 100vh;
+    background-color: #000000;
+    background-image: linear-gradient(62deg, #351f03 0%, #131212 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+
+    h1{
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+        text-decoration: underline;
+        font-style: italic;
+    }
+}

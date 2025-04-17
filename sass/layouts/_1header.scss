@@ -1,0 +1,37 @@
+header{
+    background-color: $color-header;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;;
+    justify-content: end;
+    border-bottom: solid 0.15rem #000000;
+
+    #nav-bar{
+        padding: 1rem 0;
+    
+        #nav-list{
+            display: flex;
+            list-style: none;
+            margin: 0;
+
+            .nav-item{
+                padding: 1rem;
+                font-size: 1.7rem;
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: bold;
+
+                    &:hover{
+                        font-size: 1.9rem;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+// arreglar el hover de los links del nav-bar
