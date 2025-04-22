@@ -1,6 +1,15 @@
 @import "./variables.scss";
+@import "./utilities/extends";
+@import "./utilities/mixins";
 
 //LAYOUTS DE LA PAGINA//
+
+.gradiente{
+    background-image: linear-gradient(10deg, #351f03 20%, #131212 100%);
+}
 @import "./layouts/1header";
 @import "./layouts/2home";
 @import "./layouts/3projects";
+@import "./layouts/4links";
+
+@import "./responsive/laptopL";

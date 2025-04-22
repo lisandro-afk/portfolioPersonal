@@ -1,39 +1,47 @@
-header {
+#projects #project-list .project-tile img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gradiente {
+  background-image: linear-gradient(10deg, #351f03 20%, #131212 100%);
+}
+
+header #navbar {
   background-color: rgb(51, 32, 8);
-  position: fixed;
   top: 0;
   width: 100%;
   padding: 0 2rem;
   display: flex;
   justify-content: end;
   border-bottom: solid 0.15rem #000000;
-}
-header #nav-bar {
+  position: fixed;
   padding: 1rem 0;
 }
-header #nav-bar #nav-list {
+header #navbar #nav-list {
   display: flex;
   list-style: none;
   margin: 0;
 }
-header #nav-bar #nav-list .nav-item {
+header #navbar #nav-list .nav-item {
   padding: 1rem;
   font-size: 1.7rem;
 }
-header #nav-bar #nav-list .nav-item a {
+header #navbar #nav-list .nav-item a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-}
-header #nav-bar #nav-list .nav-item a:hover {
-  font-size: 1.9rem;
   transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+header #navbar #nav-list .nav-item a:hover {
+  transform: scale(1.1);
 }
 
 #welcome-section {
   height: 100vh;
-  background-color: #000000;
-  background-image: linear-gradient(62deg, #351f03 0%, #131212 90%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +51,7 @@ header #nav-bar #nav-list .nav-item a:hover {
 #welcome-section h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  color: white;
 }
 #welcome-section p {
   font-size: 1.7rem;
@@ -52,13 +61,98 @@ header #nav-bar #nav-list .nav-item a:hover {
 }
 
 #projects {
-  display: grid;
+  background-color: rgb(211, 207, 204);
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
 }
-#projects a img {
-  width: 30%;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#projects h2 {
+  font-size: 2.7rem;
+  margin-bottom: 0;
+  color: black;
+  text-align: center;
+  padding: 1.5rem 0;
+  text-transform: capitalize;
+}
+#projects #project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0 1.5rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+#projects #project-list a:last-child {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+#projects #project-list .project-tile {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 2rem;
+  border: solid black 3px;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+}
+#projects #project-list .project-tile:hover {
+  box-shadow: 0 0 30px black;
+  transform: scale(1.05);
+}
+#projects #project-list .project-tile h3 {
+  border-bottom: solid black 3px;
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(83, 59, 42);
+}
+#contact-link {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding-bottom: 1rem;
+}
+#contact-link h4 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0 0;
+}
+#contact-link p {
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-bottom: 1.5rem;
+}
+#contact-link .contact-links a {
+  transition: all 0.3s ease-in-out;
+}
+#contact-link .contact-links a:hover {
+  scale: 1.4;
+}
+#contact-link .contact-links a .icono {
+  font-size: 4rem;
+}
+#contact-link .contact-links a .bi-instagram {
+  color: rgb(253, 92, 60);
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 1440px) {
+  #project-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  #project-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
